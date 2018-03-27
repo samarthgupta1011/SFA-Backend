@@ -48,7 +48,7 @@
 
 											done : request.body.book.printing.updates[0].done,
 											time : request.body.book.printing.updates[0].time,
-											set_done : request.body.book.printing.updates[0].set_done
+											sets_done : '0'
 										}
 										]
 									},
@@ -57,9 +57,9 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
-											set_done : request.body.book.printing.updates[0].set_done
+											done : request.body.book.folding.updates[0].done,
+											time : request.body.book.folding.updates[0].time,
+											sets_done : '0'
 										}
 										]
 									},
@@ -68,8 +68,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.book.gathering.updates[0].done,
+											time : request.body.book.gathering.updates[0].time,
 										}
 										]
 									},
@@ -78,8 +78,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.book.perfect.updates[0].done,
+											time : request.body.book.perfect.updates[0].time,
 										}
 										]
 									},
@@ -88,8 +88,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.book.sewing.updates[0].done,
+											time : request.body.book.sewing.updates[0].time,
 										}
 										]
 									},
@@ -98,8 +98,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.book.centre_pin.updates[0].done,
+											time : request.body.book.centre_pin.updates[0].time,
 										}
 										]
 									},
@@ -108,8 +108,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.book.finishing.updates[0].done,
+											time : request.body.book.finishing.updates[0].time,
 										}
 										]
 									},
@@ -118,8 +118,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.book.packing.updates[0].done,
+											time : request.body.book.packing.updates[0].time,
 										}
 										]
 									},
@@ -128,8 +128,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.book.dispatch.updates[0].done,
+											time : request.body.book.dispatch.updates[0].time,
 										}
 										]
 									},
@@ -138,8 +138,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.book.challan.updates[0].done,
+											time : request.body.book.challan.updates[0].time,
 										}
 										]
 									},
@@ -148,8 +148,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.book.bill.updates[0].done,
+											time : request.body.book.bill.updates[0].time,
 										}
 										]
 									}
@@ -158,7 +158,7 @@
 								box : null
 							};
 
-						} else if(jobType === 'box' || jobType === 'Box'){
+						} else if(jobType === 'cover' || jobType === 'Cover'){
 
 							var jtProcesses = 
 
@@ -170,7 +170,7 @@
 								total_sets : request.body.total_sets,
 								total_forms : request.body.total_forms,
 								book : null,
-								cover:{
+								cover: {
 									designing :{
 										isRequired : request.body.cover.designing.isRequired,
 										isDone : request.body.cover.designing.isDone
@@ -189,9 +189,9 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
-											set_done : request.body.book.printing.updates[0].set_done
+											done : request.body.cover.printing.updates[0].done,
+											time : request.body.cover.printing.updates[0].time,
+											sets_done : '0'
 										}
 										]
 									},
@@ -200,8 +200,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.cover.lamination.updates[0].done,
+											time : request.body.cover.lamination.updates[0].time,
 										}
 										]
 									},
@@ -210,8 +210,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.cover.creasing.updates[0].done,
+											time : request.body.cover.creasing.updates[0].time,
 										}
 										]
 									},
@@ -220,8 +220,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.cover.binding.updates[0].done,
+											time : request.body.cover.binding.updates[0].time,
 										}
 										]
 									},
@@ -230,8 +230,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.cover.packing.updates[0].done,
+											time : request.body.cover.packing.updates[0].time,
 										}
 										]
 									},
@@ -240,8 +240,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.cover.dispatch.updates[0].done,
+											time : request.body.cover.dispatch.updates[0].time,
 										}
 										]
 									},
@@ -250,8 +250,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.cover.challan.updates[0].done,
+											time : request.body.cover.challan.updates[0].time,
 										}
 										]
 									},
@@ -260,16 +260,17 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.cover.bill.updates[0].done,
+											time : request.body.cover.bill.updates[0].time,
 										}
 										]
 									}
 								},
+
 								box:null
 							};
 
-						} else if(jobType == 'cover' || jobType == 'Cover'){
+						} else if(jobType == 'box' || jobType == 'Box'){
 
 							var jtProcesses = 
 
@@ -281,8 +282,8 @@
 								total_sets : request.body.total_sets,
 								total_forms : request.body.total_forms,
 								book : null,
-								box : null,
-								cover : {
+								cover : null,
+								box : {
 									designing :{
 										isRequired : request.body.box.designing.isRequired,
 										isDone : request.body.box.designing.isDone
@@ -301,9 +302,9 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
-											set_done : request.body.book.printing.updates[0].set_done
+											done : request.body.box.printing.updates[0].done,
+											time : request.body.box.printing.updates[0].time,
+											sets_done : '0'
 										}
 										]
 									},
@@ -312,8 +313,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.box.lamination.updates[0].done,
+											time : request.body.box.lamination.updates[0].time,
 										}
 										]
 									},
@@ -322,8 +323,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.box.uv.updates[0].done,
+											time : request.body.box.uv.updates[0].time,
 										}
 										]
 									},
@@ -332,8 +333,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.box.embossing.updates[0].done,
+											time : request.body.box.embossing.updates[0].time,
 										}
 										]
 									},
@@ -342,18 +343,18 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.box.foiling.updates[0].done,
+											time : request.body.box.foiling.updates[0].time,
 										}
 										]
 									},
 									die_cut:{
-										isRequired : request.body.box.die_ut.isRequired,
+										isRequired : request.body.box.die_cut.isRequired,
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.box.die_cut.updates[0].done,
+											time : request.body.box.die_cut.updates[0].time,
 										}
 										]
 									},
@@ -362,8 +363,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.box.pasting.updates[0].done,
+											time : request.body.box.pasting.updates[0].time,
 										}
 										]
 									},
@@ -372,8 +373,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.box.packing.updates[0].done,
+											time : request.body.box.packing.updates[0].time,
 										}
 										]
 									},
@@ -382,8 +383,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.box.dispatch.updates[0].done,
+											time : request.body.box.dispatch.updates[0].time,
 										}
 										]
 									},
@@ -392,8 +393,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.box.challan.updates[0].done,
+											time : request.body.box.challan.updates[0].time,
 										}
 										]
 									},
@@ -402,8 +403,8 @@
 										updates :[ 
 										{
 
-											done : request.body.book.printing.updates[0].done,
-											time : request.body.book.printing.updates[0].time,
+											done : request.body.box.bill.updates[0].done,
+											time : request.body.box.bill.updates[0].time,
 										}
 										]
 									}
@@ -736,7 +737,12 @@
 	                	db.collection('JobTicketProcesses').
 	                	update({ wt_id : request.query.wt },{$set : ticketProcesses},function(err,resp){
 	                		if(err) throw err;
-	                		response.send(ticketProcesses);
+	                		var json_response_true = {
+	                			'success' : true,
+	                			'message' : request.query.emp + ' progress update success'
+	                		};
+
+	                		response.send(json_response_true);
 	                	});
 
 
@@ -745,7 +751,7 @@
 	                	var arrObj = {
 	                		time : request.body.time,
 	                		done : request.body.done,
-	                		sets_done : request.body.set_done
+	                		sets_done : request.body.sets_done
 	                	};
 
 
@@ -757,8 +763,14 @@
 	                	  	var newVal = oldVal + parseInt(arrObj.done);
 
 	                	  	if(newVal > parseInt(ticketProcesses.total_number)){
-	                	  		response.send("Wrong Number bro");
+	                	  		var json_response_false = {
+	                	  			'success' : false,
+	                	  			'message' : 'invalid value entered'
+	                	  		};
+
+	                	  		response.send(json_response_false);
 	                	  		return;
+
 	                	  	}
 
 	                	  	arrObj.done = newVal;
@@ -766,49 +778,63 @@
 
 
 	                	  	//Setting new sets or forms
-	                	  	var oldValSets = parseInt(arr[arrLength-1].set_done);
-	                	  	var newValSets = oldValSets + parseInt(arrObj.set_done);
+	                	  	var oldValSets = parseInt(arr[arrLength-1].sets_done);
+	                	  	var newValSets = oldValSets + parseInt(arrObj.sets_done);
 
 	                	  	if(emp == 'printing'){
 
 	                	  		if(newValSets > parseInt(ticketProcesses.total_sets)){
-	                	  			response.send("Wrong Number bro");
+	                	  			var json_response_false = {
+	                	  				'success' : false,
+	                	  				'message' : 'invalid value entered'
+	                	  			};
+
+	                	  			response.send(json_response_false);
 	                	  			return;
+
 	                	  		}
 
 	                	  	} else {
 	                	  		//Folding
 	                	  		if(newValSets > parseInt(ticketProcesses.total_forms)){
-	                	  			response.send("Wrong Number bro");
+	                	  			var json_response_false = {
+	                	  				'success' : false,
+	                	  				'message' : 'invalid value entered'
+	                	  			};
+
+	                	  			response.send(json_response_false);
 	                	  			return;
 
 	                	  		}
 
-
-
-	                	  		arrObj.set_done = newValSets;
-	                	  		arrObj.set_done = arrObj.set_done + '';
-	                	  		arr.push(arrObj);
-
-
-
-	                	  		db.collection('JobTicketProcesses').
-	                	  		update({ wt_id : request.query.wt },{$set : ticketProcesses},function(err,resp){
-	                	  			if(err) throw err;
-	                	  			response.send(resp);
-	                	  		});
-
-
-
 	                	  	} 
-	                	  }
-	                	  	else{
+
+	                	  	arrObj.sets_done = newValSets;
+	                	  	arrObj.sets_done = arrObj.sets_done + '';
+	                	  	arr.push(arrObj);
 
 
-	                	  		var arrObj = {
-	                	  			time : request.body.time,
-	                	  			done : request.body.done
+
+	                	  	db.collection('JobTicketProcesses').
+	                	  	update({ wt_id : request.query.wt },{$set : ticketProcesses},function(err,resp){
+	                	  		if(err) throw err;
+	                	  		var json_response_true = {
+	                	  			'success' : true,
+	                	  			'message' : request.query.emp + ' progress update success'
 	                	  		};
+	                	  		response.send(json_response_true);
+	                	  	});
+
+
+
+	                	  	
+	                	  } else{
+
+
+	                	  	var arrObj = {
+	                	  		time : request.body.time,
+	                	  		done : request.body.done
+	                	  	};
 
 
 	                	//Change updates
@@ -819,7 +845,13 @@
 	                	var newVal = oldVal + parseInt(arrObj.done);
 
 	                	if(newVal > parseInt(ticketProcesses.total_number)){
-	                		response.send("Wrong Number bro");
+
+	                		var json_response_false = {
+	                			'success' : false,
+	                			'message' : 'invalid value entered'
+	                		};
+
+	                		response.send(json_response_false);
 	                		return;
 	                	}
 
@@ -831,7 +863,14 @@
 	                	db.collection('JobTicketProcesses').
 	                	update({ wt_id : request.query.wt },{$set : ticketProcesses},function(err,resp){
 	                		if(err) throw err;
-	                		response.send(resp);
+
+	                		var json_response_true = {
+	                			'success' : true,
+	                			'message' : request.query.emp + ' progress update success'
+	                		};
+
+	                		response.send(json_response_true);
+
 	                	});
 
 	                }
